@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_background_rect_round"
+    android:padding="@dimen/widget_margin"
+    android:theme="@style/ThemeOverlay.CalendarWidget.AppWidgetContainer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_jalali_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/appwidget_text"
+            android:fontFamily="@font/iran_sans_fa_num"
+            android:gravity="center"
+            android:text="@string/appwidget_text"
+            android:textColor="?attr/appWidgetTextColor"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_gregorian_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/appwidget_text"
+            android:gravity="center"
+            android:text="@string/appwidget_text"
+            android:textColor="?attr/appWidgetTextColor"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal" />
+    </LinearLayout>
+</RelativeLayout>
